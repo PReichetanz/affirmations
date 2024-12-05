@@ -1,4 +1,4 @@
-const affirmations = [
+export const softwareDevelopmentAffirmations = [
     {
       id: 1,
       text: "Du bist hier genau richtig!",
@@ -49,4 +49,45 @@ const affirmations = [
     },
   ];
 
-  export default affirmations;
+  export const personalAffirmations = [
+    {
+      id: 1,
+      text: "Ich feiere meine Stärken und akzeptiere meine Schwächen."
+    },
+    {
+      id: 2,
+      text: "Ich habe alles in mir, was ich brauche, um glücklich zu sein."
+    },
+    {
+      id: 3,
+      text: "Ich bin stark und selbstbewusst."
+    },
+    {
+      id: 4,
+      text: "Ich entscheide mich heute bewusst dazu, glücklich zu sein."
+    },
+    {
+      id: 5,
+      text: "Ich liebe mein Leben, so wie es gerade ist."
+    },
+    {
+      id: 6,
+      text: "Ich bin genau richtig."
+    },
+    {
+      id: 7,
+      text: "Ich habe Vertrauen in mich."
+    },
+    {
+      id: 8,
+      text: "Ich bin stolz auf alles, was ich kann."
+    },
+    {
+      id: 9,
+      text: "Ich bin intelligent und treffe kluge Entscheidungen."
+    },
+    {
+      id: 10,
+      text: "Ich bin vollständig und ziehe Liebe von anderen an."
+    },
+  ]

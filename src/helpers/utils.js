@@ -1,12 +1,27 @@
 import chalk from "chalk";
-import affirmations from "./affirmations.js";
+import {
+  softwareDevelopmentAffirmations,
+  personalAffirmations,
+} from "./affirmations.js";
 
-export default function getRandomAffirmation() {
-  const randomIndex = getRandomIndex(0, affirmations.length - 1);
-  const randomAffirmation = affirmations[randomIndex].text;
+function getDevAffirmation() {
+  const randomIndex = getRandomIndex(
+    0,
+    softwareDevelopmentAffirmations.length - 1
+  );
+  const randomAffirmation = softwareDevelopmentAffirmations[randomIndex].text;
   console.log(`
       Hey, heute ist ein toller Tag zum Coden! Denn:
-      ${chalk.bgGreenBright(randomAffirmation)}
+      ${chalk.green(randomAffirmation)}
+      `);
+}
+
+function getPersonalAffirmation() {
+  const randomIndex = getRandomIndex(0, personalAffirmations.length - 1);
+  const randomAffirmation = personalAffirmations[randomIndex].text;
+  console.log(`
+      Hey, heute ist ein toller Tag! Denn:
+      ${chalk.green(randomAffirmation)}
       `);
 }
 
@@ -15,3 +30,5 @@ function getRandomIndex(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
+
+export { getDevAffirmation, getPersonalAffirmation };
